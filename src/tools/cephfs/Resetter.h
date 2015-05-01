@@ -30,7 +30,7 @@ protected:
   int _write_reset_event(Journaler *journaler);
 
 public:
-  Resetter() {}
+  Resetter() : rank(0) {}
 
   /**
    * For use when no journal header/pointer was present: write one
